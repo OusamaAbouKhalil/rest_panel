@@ -91947,7 +91947,7 @@ $1(a){},
 $S:6}
 A.Nd.prototype={
 N(a){var s=null
-return new A.ye(new A.wc(new A.aea(),s,s,A.aZp(),A.aY9(),t.Yg),s,s,new A.Ax(new A.nr(s),"Flutter Demo",A.vN(s,A.aD0(B.ah,s,s,B.La),!0),!1,s),s,t.Dc)}}
+return new A.ye(new A.wc(new A.aea(),s,s,A.aZp(),A.aY9(),t.Yg),s,s,new A.Ax(new A.nr(s),"Swift Go Restaurant Panel",A.vN(s,A.aD0(B.ah,s,s,B.La),!0),!1,s),s,t.Dc)}}
 A.aea.prototype={
 $1(a){var s=$.b1,r=(s==null?$.b1=$.co():s).cv("[DEFAULT]")
 A.bc(r,$.cG(),!0)
