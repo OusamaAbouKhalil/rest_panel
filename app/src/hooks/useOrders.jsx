@@ -36,8 +36,13 @@ export function OrdersProvider({ children }) {
       )
       docs.forEach((d) => knownIds.current.add(d.id))
       if (fresh.length > 0) {
-        setNewOrderIds(fresh.map((d) => d.id))
+        const ids = fresh.map((d) => d.id)
+        setNewOrderIds(ids)
         listeners.current.forEach((fn) => fn(fresh))
+        // Stop the "new" highlight after a while
+        setTimeout(() => {
+          setNewOrderIds((cur) => (cur === ids ? [] : cur))
+        }, 60000)
       }
     }, (err) => {
       console.error('orders subscription error', err)
