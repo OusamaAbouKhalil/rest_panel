@@ -1,7 +1,13 @@
 # SwiftGo Restaurant Panel
 
 Order & menu management panel for SwiftGo restaurant owners, live at
-**https://restaurants.swiftgo.online**.
+**https://ousamaaboukhalil.github.io/rest_panel/**.
+
+> The custom domain `restaurants.swiftgo.online` is offline — `swiftgo.online`
+> expired 2026-06-11 (status `pendingDelete`). Once the domain is redeemed,
+> re-add the custom domain in Pages settings and restore the `CNAME` file
+> (content: `restaurants.swiftgo.online`). The build uses relative paths and a
+> hash router, so the same build works at both URLs.
 
 Complete rebuild of the original Flutter-web panel
 ([Rest_panel_BaseCode](https://github.com/OusamaAbouKhalil/Rest_panel_BaseCode))

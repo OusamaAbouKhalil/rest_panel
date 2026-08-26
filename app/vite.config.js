@@ -4,7 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/',
+  // Relative base so the same build works at ousamaaboukhalil.github.io/rest_panel/
+  // AND at restaurants.swiftgo.online root (HashRouter keeps the document URL at the mount root)
+  base: './',
   build: {
     outDir: 'dist',
     chunkSizeWarningLimit: 1200,

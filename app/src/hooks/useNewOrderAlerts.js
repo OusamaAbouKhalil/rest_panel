@@ -12,7 +12,7 @@ export function useNewOrderAlerts() {
   soundRef.current = soundEnabled
 
   useEffect(() => {
-    audioRef.current = new Audio('/notification.mp3')
+    audioRef.current = new Audio('notification.mp3')
     audioRef.current.preload = 'auto'
   }, [])
 
@@ -32,7 +32,7 @@ export function useNewOrderAlerts() {
         try {
           new Notification(fresh.length === 1 ? 'New order!' : `${fresh.length} new orders!`, {
             body: fresh.map((o) => `#${o.order_id || o.id} — $${o.total}`).join('\n'),
-            icon: '/favicon.png',
+            icon: 'favicon.png',
             tag: 'swiftgo-new-order',
           })
         } catch (e) { /* Notification constructor unsupported on some mobile browsers */ }
